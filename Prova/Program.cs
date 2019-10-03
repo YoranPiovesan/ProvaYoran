@@ -34,7 +34,7 @@ namespace Prova
                         Console.WriteLine("Cadastrar");
                         Pessoa novaPessoa = new Pessoa();
                         Console.WriteLine("Nome:");
-                        novaPessoa.Nome = Console.ReadLine();
+                        novaPessoa.Nome = ler("Insira o nome");
                         Console.WriteLine("Idade:");
                         novaPessoa.Idade = int.Parse(Console.ReadLine());
                         Console.WriteLine("Salario:");
@@ -59,11 +59,11 @@ namespace Prova
                     Console.WriteLine("Digite o nome da pessoa que deseja alterar");
                     nome = Console.ReadLine();
                     Pessoa mudar = listaPessoa.Find(x => x.Nome.Equals(nome));
-                    Console.WriteLine("Atual: " + mudar.Nome);
-                    Console.WriteLine("Atual: " + mudar.Idade);
-                    Console.WriteLine("Atual: " + mudar.Salario);
-                    Console.WriteLine("Atual: " + mudar.DataNascimento);
-                    Console.WriteLine("Atual: " + mudar.AntigoSalario);
+                    Console.WriteLine("Nome atual: " + mudar.Nome);
+                    Console.WriteLine("Idade atual: " + mudar.Idade);
+                    Console.WriteLine("Salario atual: " + mudar.Salario);
+                    Console.WriteLine("Data de nascimento atual: " + mudar.DataNascimento);
+                    Console.WriteLine("Antigo salario registrado atualmente: " + mudar.AntigoSalario);
                     Console.WriteLine("Usuario" + mudar.Nome);
                     Console.WriteLine("1 - mudar nome");
                     Console.WriteLine("2 - mudar idade");
